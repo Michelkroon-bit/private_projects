@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background: url('emile-perron-xrVDYZRGdw4-unsplash.jpg') no-repeat center center/cover;
+    background: url('images/emile-perron-xrVDYZRGdw4-unsplash.jpg') no-repeat center center/cover;
     margin: 0;
     height: 2200px; 
     background-attachment: fixed; 
@@ -151,10 +151,6 @@ body::after {
     }
 }
 
-
-
-
-
 .My-Goal {
     display: block; 
     margin-top: 100px; 
@@ -229,6 +225,10 @@ body::after {
         grid-template-columns: 1fr; 
         gap: 15px;
     }
+    img {
+        width: 100%; /* Fits screen width */
+        height: auto; /* Adjusts height proportionally */
+    }
 
 }
 
@@ -238,6 +238,11 @@ body::after {
         font-size: 14px;
         background-image: none;
         background-color: #aeaeae;
+    }
+    img {
+        width: 100%; /* Fits smaller screens */
+        height: auto; /* Maintains aspect ratio */
+        max-height: 300px; /* Optional: Limit maximum height */
     }
     body::after {
         display: none; 
