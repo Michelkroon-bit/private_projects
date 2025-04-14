@@ -213,22 +213,30 @@ body::after {
 
 }
 
-@media (max-width: 700px) {
-    .Header{
-        font-size: 100%;
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; 
+        padding: 10px;
     }
 
-    body::after {
-        height: 3800px;
-
+    .Header h1 {
+        font-size: 1.5em; 
+        text-align: center;
     }
 
-    .about-me {
-        flex-direction: column; 
-        text-align: center; 
+    .skills-list, .grid ul {
+        padding-left: 0;
     }
 
-    .about-me img {
-        margin: 0 auto 20px; 
+    .grid {
+        grid-template-columns: 1fr; 
+        gap: 15px;
     }
-}
+
+    .card {
+        padding: 10px; 
+    }
+
+    .My-Goal, .Contact-Me {
+        max-width: 100%;
+    }
