@@ -215,17 +215,14 @@ body::after {
 
 @media (max-width: 768px) {
     body {
-        font-size: 16px; 
+        background-size: cover;
         padding: 10px;
+        font-size: 16px;
     }
 
     .Header h1 {
-        font-size: 1.5em; 
+        font-size: 1.5em;
         text-align: center;
-    }
-
-    .skills-list, .grid ul {
-        padding-left: 0;
     }
 
     .grid {
@@ -233,10 +230,28 @@ body::after {
         gap: 15px;
     }
 
-    .card {
-        padding: 10px; 
+}
+
+@media (max-width: 556px) {
+    body {
+        padding: 5px;
+        font-size: 14px;
+        background-size: cover;
+    }
+    body::after {
+        display: none; 
     }
 
-    .My-Goal, .Contact-Me {
-        max-width: 100%;
+    .Header h1 {
+        font-size: 1.2em;
     }
+
+    .card {
+        padding: 5px;
+        text-align: left;
+    }
+    .Contact-Me{
+     
+        background: rgba(128, 127, 127, 0.8); 
+    }
+}
