@@ -237,7 +237,6 @@ body::after {
         padding: 5px;
         font-size: 14px;
         background-image: none;
-        background-color: #aeaeae;
     }
     img {
         width: 100%; /* Fits smaller screens */
