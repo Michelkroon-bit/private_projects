@@ -6,7 +6,7 @@ html {
 body {
     background: url('emile-perron-xrVDYZRGdw4-unsplash.jpg') no-repeat center center/cover;
     margin: 0;
-    height: 2200px; 
+    height: 2600px; 
     background-attachment: fixed; 
     font-family: 'Roboto', sans-serif;
     
@@ -18,7 +18,7 @@ body::after {
     top: 0;
     left: 0;
     width: 100%;
-    height: 3350px;
+    height: 3500px;
     background: rgba(0, 0, 0, 0.6); 
     z-index: 0;
     pointer-events: none;
