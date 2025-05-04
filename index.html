@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Michel's portfolio - Aspiring full-stack developer passionate about building custom websites for small businesses.">
+    <meta name="keywords" content="Full-stack developer, web development, Python, C#, HTML, CSS, JavaScript, small business websites">
+    <meta name="author" content="Michel Kroon">
+    <link rel="stylesheet" href="Portofolio/Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| A junior student's portfolio by Michel Kroon | </title>
+</head>
+<body>
+    <div class="Header">
+        <h1><strong>Hi, I’m Michel—a junior software developer passionate about building modern websites. </strong></h1>
+        
+    </div>
+    <div class="scroll-to-see-more">
+        <p>Scroll down to see what i do</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="White" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+          </svg>
+    </div>
+   
+    <div class="about-me hidden">
+        <img src="143705955.jpeg" alt="Photo of Michel Kroon, a junior software developer">
+        <p><strong>I’m a junior software developer with a passion for creating modern websites and designing sleek, user-friendly interfaces. I strive to turn ideas into well-crafted digital solutions that make a difference.</strong></p>
+    </div>
+
+    <div class="skills hidden">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li><strong>C# (OOP) knowledge:</strong> ★★★☆☆</li>
+            <li><strong>Python knowledge:</strong> ★★★★☆</li>
+            <li><strong>HTML & CSS knowledge:</strong> ★★★★☆</li>
+            <li><strong>JavaScript knowledge:</strong> ★★☆☆☆</li>
+            <li><strong>PowerPlatform knowledge:</strong> ★★★★☆</li>
+        </ul>
+    </div>
+
+    <div class="Things-i-want-to-learn hidden">
+        <h2>Things i want to learn</h2>
+        <ul>
+            <li><strong>React</strong></li>
+            <li><strong>nodeJS</strong></li>
+            <li><strong>SQL</strong></li>
+        </ul>
+    </div>
+
+
+    <div class="My-Projects hidden">
+        <h1>These are a few of my bigger projects that i made using languages as c# and python</h1>
+        <div class="grid">
+            <div class="card">
+                <h3>Pokémon OOP Game</h3>
+                <p>Turn-based C# game demonstrating OOP concepts.</p>
+            </div>
+            <div class="card">
+                <h3>Python Console Games</h3>
+                <p>Console-based games showcasing logical design and Python skills.</p>
+            </div>
+            <div class="card">
+                <h3>PNG Invoice Generator</h3>
+                <p>Automates invoice creation using Python.</p>
+            </div>
+            <div class="card">
+                <h3>HardWare order app with PowerPlatform</h3>
+                <p>A hardware order app made entirely in PowerPlatform that i made during my intern ship at The Chemours Company Dordrecht.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Small-projects hidden">
+        <h1>These are some tools you can use that i made using javascript</h1>
+        <div class="grid">
+            <div class="card">
+                <h3>A custom QR code Generator</h3>
+                <button onclick="generateQRCode()">generate a custom QR code</button>
+                <div id="qrcode"></div>
+                <a id="downloadBtn" style="display: none;" download="qr_code.png">Download QR Code</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="My-Goal">
+        <h2>My Aspiration</h2>
+        <p>
+            I aim to become a full-stack developer who can independently build custom websites for small businesses. 
+            My goal is to create impactful solutions, drawing on my knowledge in Python, C#, and HTML/CSS, while sharpening my JavaScript skills to complete my toolkit.
+        </p>
+        <ul>
+            <li>experience in Python, C#, and HTML/CSS and PowerPlatform</li>
+            <li>is willing to learn new things as long as the recources are provided</li>
+            <li>Eager to work in a collaborative and reliable environment</li>
+        </ul>
+    </div>
+
+    <div class="Contact-Me">
+        <h1>Contact Me</h1>
+        <ol>
+           <li><a href="https://github.com/Michelkroon-bit" target="_blank">Visit My GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/feed/" target="_blank">Visit My LinkedIn Profile</a></li>
+            <li><a href="mailto:michelkroon2007@gmail.com">E-mail: michelkroon2007@gmail.com</a></li>
+            <li><a href="Michel's CV.pdf">Download my resume</a></li>
+    </ol>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="Portofolio/script.js"></script>
+</body>
+
+</html>
