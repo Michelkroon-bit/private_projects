@@ -1,0 +1,332 @@
+html {
+    scroll-behavior:smooth;
+
+}
+
+body {
+    background: url('emile-perron-xrVDYZRGdw4-unsplash.jpg') no-repeat center center/cover;
+    margin: 0;
+    height: 2200px; 
+    background-attachment: fixed; 
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3350px;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+.Header {
+    position: absolute;
+    top: 25%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    color: white;
+   
+    text-align: center;
+    font-size: medium;
+    padding: 0 15px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.scroll-to-see-more p{
+        position: absolute;
+        top: 87%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        z-index: 1;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: medium;
+        padding: 0 15px; 
+       
+}
+
+
+.scroll-to-see-more svg{
+    position: absolute;
+        top: 94%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        z-index: 1;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: medium;
+        padding: 0 15px; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.hidden {
+    opacity: 0; 
+    transform: translateY(20px);
+}
+
+.visible {
+    opacity: 1;
+    animation: fadeIn 0.8s ease-out forwards; 
+}
+.about-me{
+
+        display: flex;
+        align-items: center; 
+        margin-top: 900px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        padding: 20px; 
+        background: rgba(128, 127, 127, 0.8); 
+        max-width: 800px; 
+        border-radius: 5px; 
+        box-shadow: 0 9px 8px rgba(0, 0, 0, 0.2); 
+    
+        img {
+            width: 270px; 
+            height: 270px; 
+            border-radius: 50%; 
+            margin-right: 20px; 
+        }
+}
+
+.Things-i-want-to-learn {
+    display: flex;
+        align-items: center; 
+        margin-top: 90px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        padding: 20px; 
+        background: rgba(128, 127, 127, 0.8); 
+        max-width: 800px; 
+        border-radius: 5px; 
+        box-shadow: 0 9px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.My-Projects {
+    text-align: center;
+    display: block;
+    margin-top: 100px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 20px; 
+    background: rgba(128, 127, 127, 0.8); 
+    max-width: 800px; 
+    border-radius: 5px; 
+    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.2);
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        gap: 20px; 
+        margin: 0 auto; 
+    }
+    .card {
+        padding: 20px;
+        border: 1px solid #7f7f7f;
+        border-radius: 10px;
+        text-align: center;
+        background: #9e9e9e;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+    }
+}
+
+.Small-projects{
+    text-align: center;
+    display: block;
+    margin-top: 100px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 20px; 
+    background: rgba(128, 127, 127, 0.8); 
+    max-width: 800px; 
+    border-radius: 5px; 
+    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.2);
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        gap: 20px; 
+        margin: 0 auto; 
+    }
+    .card {
+        padding: 20px;
+        border: 1px solid #7f7f7f;
+        border-radius: 10px;
+        text-align: center;
+        background: #9e9e9e;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+    }
+    
+    button:hover{
+        cursor: pointer;
+
+    }
+    #qrcode {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin-top: 20px; 
+        text-align: center;
+        width: 100%;
+    }
+    #downloadBtn{
+        color: rgb(35, 35, 35);
+        transform: scale(1.05);
+    }
+}
+
+
+.My-Goal {
+    display: block; 
+    margin-top: 100px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 20px; 
+    background: rgba(128, 127, 127, 0.8); 
+    max-width: 800px; 
+    border-radius: 5px; 
+    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.2); 
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;
+    color: black;
+}
+
+.Contact-Me {
+    position: relative;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(51, 51, 51, 0.8);
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    a{
+        color: black;
+        font-size: 1.2em;
+        text-decoration: none;
+        cursor: pointer;
+        z-index: 2;
+        margin: 10px 0;
+        transition: color 0.3s ease, transform 0.3s ease; 
+    }
+
+    a:hover {
+        color: rgb(35, 35, 35);
+        transform: scale(1.05);
+    }
+}
+
+.skills{
+    display: flex;
+    align-items: center; 
+    margin-top: 80px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 20px; 
+    background: rgba(128, 127, 127, 0.8); 
+    max-width: 800px; 
+    border-radius: 5px; 
+    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.2); 
+    list-style: none;
+
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .Header h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+    img {
+        width: 100%; /* Fits screen width */
+        height: auto; /* Adjusts height proportionally */
+    }
+
+}
+
+@media (max-width: 556px) {
+    body {
+        padding: 5px;
+        font-size: 14px;
+        background-image: none;
+    }
+    img {
+        width: 100%; /* Fits smaller screens */
+        height: auto; /* Maintains aspect ratio */
+        max-height: 300px; /* Optional: Limit maximum height */
+    }
+    body::after {
+        display: none; 
+    }
+
+    .Header h1 {
+        font-size: 1.2em;
+    }
+
+    .card {
+        padding: 5px;
+        text-align: left;
+    }
+    .Contact-Me{
+     
+        background: rgba(83, 83, 83, 0.8); 
+    }
+    #qrcode{
+        width: 50%;
+        height: 50%;
+        max-width: 75px;
+        max-height: 75px;
+    }
+}
+
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#dice-output {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+    animation: shake 0.5s ease-in-out;
+}
