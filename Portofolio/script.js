@@ -51,11 +51,5 @@ function generateQRCode() {
     }, 500);
     alert("Your QR code has been generated");
 }
-// Koppel de functie aan een knop
-document.getElementById("generateBtn").addEventListener("click", generateQRCode);
-;
 
-function rollDice() {
-    let diceResult = Math.floor(Math.random() * 6) + 1; // Willekeurig nummer tussen 1 en 6
-    document.getElementById("dice-output").innerText = "🎲 " + diceResult;
-}
+document.getElementById("generateBtn").addEventListener("click", generateQRCode);

@@ -11,6 +11,16 @@ body {
     font-family: 'Roboto', sans-serif;
     
 }
+h1 {
+    font-size: 2.2rem; 
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
 
 body::after {
     content: "";
@@ -18,8 +28,8 @@ body::after {
     top: 0;
     left: 0;
     width: 100%;
-    height: 3500px;
-    background: rgba(0, 0, 0, 0.6); 
+    height: 3700px;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 0;
     pointer-events: none;
 }
@@ -112,15 +122,15 @@ body::after {
 
 .Things-i-want-to-learn {
     display: flex;
-        align-items: center; 
-        margin-top: 90px; 
-        margin-left: auto; 
-        margin-right: auto; 
-        padding: 20px; 
-        background: rgba(128, 127, 127, 0.8); 
-        max-width: 800px; 
-        border-radius: 5px; 
-        box-shadow: 0 9px 8px rgba(0, 0, 0, 0.2); 
+    align-items: center; 
+    margin-top: 90px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 20px; 
+    background: rgba(128, 127, 127, 0.8); 
+    max-width: 800px; 
+    border-radius: 5px; 
+    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .My-Projects {
@@ -141,17 +151,49 @@ body::after {
         gap: 20px; 
         margin: 0 auto; 
     }
-    .card {
-        padding: 20px;
+    .card {  
+        margin-left: 39px;
+        position: relative;
+        width: 300px;
+        height: 250px;
+        perspective: 1000px; 
+    }
+    
+    .card-inner {
+        display: flex;
+        width: 300px;
+        height: 100px;
+        position: relative;
+        transition: transform 0.6s ease-in-out;
+        transform-style: preserve-3d; 
+    }
+    
+    .card:hover .card-inner {
+        transform: rotateY(180deg); 
+    }
+    
+    .card-front, .card-back {
+        display: grid;
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        backface-visibility: hidden;
+        align-items: center;
+        justify-content: center;
         border: 1px solid #7f7f7f;
         border-radius: 10px;
-        text-align: center;
-        background: #9e9e9e;
+        background: #9e9e9e; 
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        
+        font-family: Arial, sans-serif;
     }
-}
-
+    
+    .card-front {
+        color: black;
+    }
+    
+    .card-back {
+        transform: rotateY(180deg);
+}}
 .Small-projects{
     text-align: center;
     display: block;
@@ -169,8 +211,10 @@ body::after {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
         gap: 20px; 
         margin: 0 auto; 
+        perspective: 1000px;
     }
     .card {
+   
         padding: 20px;
         border: 1px solid #7f7f7f;
         border-radius: 10px;
@@ -182,7 +226,9 @@ body::after {
     
     button:hover{
         cursor: pointer;
-
+        transform: scale(1.05);
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+        transition: 0.3s ease-in-out;
     }
     #qrcode {
         display: flex;
@@ -239,6 +285,9 @@ body::after {
     a:hover {
         color: rgb(35, 35, 35);
         transform: scale(1.05);
+        transform: scale(1.05);
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+        transition: 0.3s ease-in-out;
     }
 }
 
@@ -257,8 +306,11 @@ body::after {
 
 }
 
+
+
 @media (max-width: 768px) {
     body {
+        background-attachment: scroll;
         background-size: cover;
         padding: 10px;
         font-size: 16px;
@@ -287,9 +339,9 @@ body::after {
         background-image: none;
     }
     img {
-        width: 100%; /* Fits smaller screens */
-        height: auto; /* Maintains aspect ratio */
-        max-height: 300px; /* Optional: Limit maximum height */
+        width: 100%; 
+        height: auto; 
+        max-height: 300px; 
     }
     body::after {
         display: none; 
@@ -316,17 +368,39 @@ body::after {
 }
 
 
-@keyframes shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(10deg); }
-    50% { transform: rotate(-10deg); }
-    75% { transform: rotate(5deg); }
-    100% { transform: rotate(0deg); }
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds space between text and bar */
 }
 
-#dice-output {
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 10px;
-    animation: shake 0.5s ease-in-out;
+.skill span {
+    width: 100px; /* Fixed width for consistency */
+    font-weight: bold;
+    
+}
+
+.skill-bar {
+    min-width: 150px;
+    flex-grow: 1; /* Makes the bar take up remaining space */
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fill {
+    height: 100%;
+    background: linear-gradient(90deg, #686969, #616261);
+    transition: width 1s ease-in-out;
+}
+
+.section {
+    margin: 100px auto;
+    padding: 30px;
+    max-width: 800px;
+    background: rgba(128, 127, 127, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.2);
 }
