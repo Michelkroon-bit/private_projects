@@ -6,7 +6,7 @@ html {
 body {
     background: url('emile-perron-xrVDYZRGdw4-unsplash.jpg') no-repeat center center/cover;
     margin: 0;
-    height: 2500px; 
+    height: 2450px; 
     background-attachment: fixed; 
     font-family: 'Roboto', sans-serif;
     
@@ -28,7 +28,7 @@ body::after {
     top: 0;
     left: 0;
     width: 100%;
-    height: 3700px;
+    height: 3775px;
     background: rgba(0, 0, 0, 0.5);
     z-index: 0;
     pointer-events: none;
@@ -90,6 +90,7 @@ body::after {
 }
 
 
+
 .hidden {
     opacity: 0; 
     transform: translateY(20px);
@@ -99,6 +100,8 @@ body::after {
     opacity: 1;
     animation: fadeIn 0.8s ease-out forwards; 
 }
+
+/* about me */
 .about-me{
 
         display: flex;
@@ -120,6 +123,7 @@ body::after {
         }
 }
 
+/* things i want to learn in the future */
 .Things-i-want-to-learn {
     display: flex;
     align-items: center; 
@@ -133,6 +137,7 @@ body::after {
     box-shadow: 0 9px 8px rgba(0, 0, 0, 0.2); 
 }
 
+/* My main projects */
 .My-Projects {
     text-align: center;
     display: block;
@@ -194,6 +199,8 @@ body::after {
     .card-back {
         transform: rotateY(180deg);
 }}
+
+/* Small project items */
 .Small-projects{
     text-align: center;
     display: block;
@@ -244,7 +251,7 @@ body::after {
     }
 }
 
-
+/* My goal */
 .My-Goal {
     display: block; 
     margin-top: 100px; 
@@ -261,6 +268,7 @@ body::after {
 }
 
 .Contact-Me {
+    background: rgba(68, 68, 68, 0.8); 
     position: relative;
     z-index: 10000;
     display: flex;
@@ -268,7 +276,7 @@ body::after {
     align-items: center;
     margin: 100px auto;
     padding: 20px;
-    background: rgba(51, 51, 51, 0.8);
+     
     max-width: 800px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -291,6 +299,7 @@ body::after {
     }
 }
 
+/* skills */
 .skills{
     display: flex;
     align-items: center; 
@@ -307,7 +316,7 @@ body::after {
 }
 
 
-
+/* scaling */
 @media (max-width: 768px) {
     body {
         background-attachment: scroll;
@@ -326,8 +335,14 @@ body::after {
         gap: 15px;
     }
     img {
-        width: 100%; /* Fits screen width */
-        height: auto; /* Adjusts height proportionally */
+        width: 100%; 
+        height: auto; 
+    }  
+
+    .about-me{
+        align-items: center;
+        justify-content: center;
+        
     }
 
 }
@@ -336,7 +351,7 @@ body::after {
     body {
         padding: 5px;
         font-size: 14px;
-        background-image: none;
+        x-image: none;
     }
     img {
         width: 100%; 
@@ -356,8 +371,7 @@ body::after {
         text-align: left;
     }
     .Contact-Me{
-     
-        background: rgba(83, 83, 83, 0.8); 
+        background: rgba(128, 127, 127, 0.8); 
     }
     #qrcode{
         width: 50%;
@@ -371,18 +385,18 @@ body::after {
 .skill {
     display: flex;
     align-items: center;
-    gap: 20px; /* Adds space between text and bar */
+    gap: 20px; 
 }
 
 .skill span {
-    width: 100px; /* Fixed width for consistency */
+    width: 100px; 
     font-weight: bold;
     
 }
 
 .skill-bar {
     min-width: 150px;
-    flex-grow: 1; /* Makes the bar take up remaining space */
+    flex-grow: 1; 
     height: 12px;
     background-color: #ddd;
     border-radius: 6px;
@@ -403,4 +417,5 @@ body::after {
     background: rgba(128, 127, 127, 0.8);
     border-radius: 5px;
     box-shadow: 0 9px 8px rgba(0, 0, 0, 0.2);
+    
 }

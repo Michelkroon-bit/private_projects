@@ -20,7 +20,7 @@ while(a < 10):
     current_time = time.localtime()
     hour = current_time.tm_hour
     minute = current_time.tm_min+2
-    send_Msg("+31626020927" ,random.choice(RANDOM_ARRAY_WITH_WORD)  , hour , minute)
+    send_Msg("+31623029011" ,random.choice(RANDOM_ARRAY_WITH_WORD)  , hour , minute)
     a+=1
     time.sleep(10)
     
