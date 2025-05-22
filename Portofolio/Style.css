@@ -319,10 +319,16 @@ body::after {
 /* scaling */
 @media (max-width: 768px) {
     body {
+        background-image: none;
+        background-color: #616261;
         background-attachment: scroll;
         background-size: cover;
         padding: 10px;
         font-size: 16px;
+    }
+
+    body::after{
+        height:auto;
     }
 
     .Header h1 {
@@ -337,11 +343,15 @@ body::after {
     img {
         width: 100%; 
         height: auto; 
-    }  
+    } 
+        
 
     .about-me{
-        align-items: center;
+        display: flex;
+        flex-direction: column; /* Zorgt dat img boven tekst staat */
+        align-items: start; /* optioneel: uitlijning links */
         justify-content: center;
+        align-items: center;
         
     }
 
@@ -349,17 +359,20 @@ body::after {
 
 @media (max-width: 556px) {
     body {
+        background-image: none;
+        background-color: #616261;
         padding: 5px;
         font-size: 14px;
-        x-image: none;
+        height: auto;
     }
     img {
-        width: 100%; 
+        width: auto; 
         height: auto; 
         max-height: 300px; 
     }
     body::after {
         display: none; 
+        height: auto;
     }
 
     .Header h1 {
@@ -367,11 +380,18 @@ body::after {
     }
 
     .card {
-        padding: 5px;
-        text-align: left;
+        display: flex;
+        flex-direction: column; 
+        align-items: start; 
     }
+    
     .Contact-Me{
         background: rgba(128, 127, 127, 0.8); 
+        display: flex;
+        flex-direction: column; 
+        align-items: start;
+        justify-content: center;
+        align-items: center;
     }
     #qrcode{
         width: 50%;
